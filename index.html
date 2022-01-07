@@ -1,1 +1,38 @@
-<p>test</p>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My project</title>
+
+
+</head>
+  <body class="">
+   
+    <button id="showProduct">
+      Heyyy
+    </button>
+    
+
+
+    <script>
+var rootDiv = document.createElement('div');
+rootDiv.id = "root";
+document.body.appendChild(rootDiv);
+var styleVM = document.createElement('link');
+styleVM.href = 'https://hananiradzi.github.io/newdist/index.css';
+styleVM.rel="stylesheet"
+
+var scriptVM = document.createElement('script');
+scriptVM.type = 'module'; 
+scriptVM.src = 'https://hananiradzi.github.io/newdist/index.js';
+document.head.appendChild(styleVM);
+document.head.appendChild(scriptVM);
+const but = document.getElementById("showProduct");
+but.addEventListener('click', () => {
+
+    window.vmShowProduct('dcPNcyApanbttLTEx5Cb');
+});
+    </script>
+  </body>
+
+</html>
